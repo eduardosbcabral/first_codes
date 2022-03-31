@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulário de Login</title>
+</head>
+<body>
+	<h1>Informe usuário/senha para login</h1>
+	
+	<form action="/SistemaLoginContato/login" method="post">
+	
+		Usuário: <input type="text" name="usuario"><p><br>
+		Senha: <input type="password" name="senha"><p><br>
+		<input type="submit" name="logar"> 
+		
+	</form>
+	
+	<br>
+	<hr style="height:2px; background-color:#000">
+	<br>
+	
+	<form action="/SistemaLoginContato/todosUsuarios" method="get">
+		<h2>Todos os usuários: <input type="submit" name="todos"></h2> 
+	</form>
+</body>
+</html>
