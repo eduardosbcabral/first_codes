@@ -1,0 +1,23 @@
+calcular quantidade de salarios minimos do número
+(defun sal (n1)
+(setq a (/ n1 937)
+(format t "~$ salarios minimos" a)))
+
+
+IF ELSE
+(defun soma (n1 n2)
+(setq a (+ n1 n2))
+(if (= a 100) (format t "Igual a 100") (format t "Diferente de 100")))
+	para ser else é só colocar 2 sentenças uma do lado da outra		
+
+Reverter string
+(setq str "STRING")
+(reverse "STRING")
+GNIRTS
+
+
+Reverter e imprimir linha a linha
+(defun contrario (nome)
+  (print (subseq nome (- (length nome) 1) (length nome)))
+  (if (> (length nome) 1) (contrario (subseq nome 0 (- (length nome) 1))))
+)
